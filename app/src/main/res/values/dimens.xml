@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="button_text_size">@dimen/_12ssp</dimen>
+    <dimen name="button_height">@dimen/_35sdp</dimen>
+    <dimen name="margin_horizontal">@dimen/_15sdp</dimen>
+    <dimen name="recyclerview_space">@dimen/_13sdp</dimen>
+
+
+    <dimen name="recycler_spacing_8">@dimen/_10sdp</dimen>
+</resources>
