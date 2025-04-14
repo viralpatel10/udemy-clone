@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_margin="@dimen/margin_horizontal"
+    android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/txt_delete_reminder"
+            android:layout_marginTop="@dimen/_18sdp"
+            android:textSize="@dimen/_12ssp"
+            android:layout_gravity="center"
+            android:fontFamily="@font/poppins_medium"
+            android:textColor="@color/primary_color"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:layout_marginTop="@dimen/_25sdp"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:id="@+id/btnCancel"
+                android:layout_width="@dimen/_70sdp"
+                android:gravity="center"
+                android:background="@drawable/bg_dialog"
+                android:layout_height="@dimen/_25sdp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/cancel"
+                    android:textSize="@dimen/_14ssp"
+                    android:fontFamily="@font/poppins_medium"
+                    android:textColor="@color/primary_color"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/btnYes"
+                android:layout_width="@dimen/_70sdp"
+                android:gravity="center"
+                android:layout_marginStart="@dimen/_20sdp"
+                android:background="@drawable/bg_button"
+                android:layout_height="@dimen/_25sdp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/yes"
+                    android:textSize="@dimen/_14ssp"
+                    android:fontFamily="@font/poppins_medium"
+                    android:textColor="@color/white"/>
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+</RelativeLayout>

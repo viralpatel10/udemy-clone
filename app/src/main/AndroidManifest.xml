@@ -2,6 +2,9 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools">
 
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_MEDIA_IMAGES" />
+
     <application
         android:allowBackup="true"
         android:dataExtractionRules="@xml/data_extraction_rules"
@@ -13,7 +16,37 @@
         android:theme="@style/Theme.Udemyclone"
         tools:targetApi="31">
         <activity
-            android:name=".MainActivity"
+            android:name=".ui.activity.MyCourseEmptyActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ui.activity.MyCourseOngoingActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ui.activity.MyCourseCompleteActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ui.activity.NoInternetActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ui.activity.PasswordChangeActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ui.activity.CreateNewPasswordActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ui.activity.OTPVerificationActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ui.activity.ForgotPasswordActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ui.activity.RegisterActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ui.activity.LoginActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ui.activity.IntroActivity"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -21,6 +54,58 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+        <activity
+            android:name=".ui.activity.AddOtherLearningRemindersActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ui.activity.ReminderDetailsActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ui.activity.LearningRemindersActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ui.activity.VideoPlaybackOptionsActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ui.activity.VideoDownloadQualityActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ui.activity.DownloadOptionsActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ui.activity.SubscriptionPlanActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ui.activity.CheckoutActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ui.activity.SubscriptionActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ui.activity.PaymentMethodActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ui.activity.AccountSecurityActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ui.activity.CloseAccountActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ui.activity.PrivacyActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ui.activity.AboutActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ui.activity.SettingActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ui.activity.ProfileActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ui.activity.MainActivity"
+            android:exported="false" />
+
         <meta-data
             android:name="preloaded_fonts"
             android:resource="@array/preloaded_fonts" />

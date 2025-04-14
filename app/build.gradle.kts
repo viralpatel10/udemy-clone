@@ -62,4 +62,8 @@ dependencies {
     implementation(libs.binding.adapter)
     implementation(libs.gson)
     implementation(libs.advancedcardview)
+
+    implementation ("com.github.PhilJay:MPAndroidChart:v3.1.0")
+    implementation ("com.tbuonomo:dotsindicator:4.3")
+
 }

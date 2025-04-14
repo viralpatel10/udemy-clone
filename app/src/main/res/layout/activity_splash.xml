@@ -15,6 +15,6 @@
         android:layout_height="@dimen/_80sdp"
         android:layout_gravity="center"
         android:contentDescription="@string/todo"
-        android:src="@mipmap/ic_launcher" />
+        android:src="@drawable/image_splash" />
 
 </LinearLayout>

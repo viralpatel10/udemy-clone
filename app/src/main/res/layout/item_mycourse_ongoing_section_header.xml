@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:orientation="horizontal"
+    android:layout_marginTop="@dimen/_15sdp"
+    android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:id="@+id/ll_section"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/txtSection"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/section"
+            android:textColor="@color/black"
+            android:fontFamily="@font/poppins_medium"
+            android:textSize="@dimen/_12ssp"/>
+
+        <TextView
+            android:id="@+id/txtIntroduction"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/introduction"
+            android:textSize="@dimen/_12ssp"
+            android:layout_marginStart="@dimen/_5sdp"
+            android:fontFamily="@font/poppins_medium"
+            android:textColor="@color/primary_color"/>
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/txtTotalDuration"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/section_time"
+                android:layout_alignParentEnd="true"
+                android:textColor="@color/primary_color"
+                android:fontFamily="@font/poppins_medium"
+                android:textSize="@dimen/_10ssp"/>
+
+        </RelativeLayout>
+    </LinearLayout>
+
+</LinearLayout>

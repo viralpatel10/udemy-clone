@@ -1,0 +1,216 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_margin="@dimen/margin_horizontal"
+    tools:context=".ui.activity.DownloadOptionsActivity">
+
+    <LinearLayout
+        android:id="@+id/ll_main"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:id="@+id/btnBack"
+            android:layout_width="@dimen/_20sdp"
+            android:layout_height="@dimen/_20sdp"
+            android:layout_gravity="center"
+            android:src="@drawable/ic_back" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/_15sdp"
+            android:fontFamily="@font/poppins_semibold"
+            android:text="@string/download_option"
+            android:textColor="@color/primary_color"
+            android:textSize="@dimen/_16ssp" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/txtVideoQuality"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/ll_main"
+        android:layout_marginTop="@dimen/_20sdp"
+        android:fontFamily="@font/poppins_medium"
+        android:text="@string/video_download_quality"
+        android:textColor="@color/primary_color"
+        android:textSize="@dimen/_13ssp" />
+
+    <TextView
+        android:id="@+id/txtQualityValue"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/txtVideoQuality"
+        android:layout_alignStart="@id/txtVideoQuality"
+        android:layout_marginTop="@dimen/_4sdp"
+        android:fontFamily="@font/poppins"
+        android:text="1080p"
+        android:textColor="@color/primary_color1"
+        android:textSize="@dimen/_12ssp" />
+
+    <ImageView
+        android:id="@+id/btnSelectQuality"
+        android:layout_width="@dimen/_15sdp"
+        android:layout_height="@dimen/_15sdp"
+        android:layout_alignTop="@id/txtVideoQuality"
+        android:layout_alignBottom="@id/txtQualityValue"
+        android:layout_alignParentEnd="true"
+        android:src="@drawable/ic_next" />
+
+    <TextView
+        android:id="@+id/wifiOnlyText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/txtQualityValue"
+        android:layout_marginTop="@dimen/_20sdp"
+        android:fontFamily="@font/poppins_medium"
+        android:text="@string/download_wifi"
+        android:textColor="@color/primary_color"
+        android:textSize="@dimen/_13ssp" />
+
+    <Switch
+        android:id="@+id/wifiSwitch"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@id/wifiOnlyText"
+        android:layout_alignParentEnd="true"
+        android:checked="true" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/_20sdp"
+        android:layout_below="@id/wifiSwitch"
+        android:orientation="horizontal">
+
+
+        <com.github.mikephil.charting.charts.PieChart
+            android:id="@+id/pieChart"
+            android:layout_width="@dimen/_120sdp"
+            android:layout_height="@dimen/_120sdp"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:id="@+id/image_chart_other"
+                    android:layout_width="@dimen/_12sdp"
+                    android:layout_gravity="center"
+                    android:layout_height="@dimen/_12sdp"
+                    android:src="@drawable/ic_chart_other"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/other"
+                    android:layout_marginStart="@dimen/_8sdp"
+                    android:layout_gravity="center"
+                    android:textSize="@dimen/_12ssp"
+                    android:fontFamily="@font/poppins_medium"
+                    android:textColor="@color/primary_color"/>
+
+                <TextView
+                    android:id="@+id/txtOtherStorage"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/other_storage"
+                    android:layout_marginStart="@dimen/_8sdp"
+                    android:layout_gravity="center"
+                    android:textSize="@dimen/_12ssp"
+                    android:fontFamily="@font/poppins_medium"
+                    android:textColor="@color/primary_color1"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_15sdp"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:id="@+id/image_chart_skill_energy"
+                    android:layout_width="@dimen/_12sdp"
+                    android:layout_gravity="center"
+                    android:layout_height="@dimen/_12sdp"
+                    android:src="@drawable/ic_chart_skill_energy"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/other"
+                    android:layout_marginStart="@dimen/_8sdp"
+                    android:layout_gravity="center"
+                    android:textSize="@dimen/_12ssp"
+                    android:fontFamily="@font/poppins_medium"
+                    android:textColor="@color/primary_color"/>
+
+                <TextView
+                    android:id="@+id/txtSkillEnergyStorage"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/other_storage"
+                    android:layout_marginStart="@dimen/_8sdp"
+                    android:layout_gravity="center"
+                    android:textSize="@dimen/_12ssp"
+                    android:fontFamily="@font/poppins_medium"
+                    android:textColor="@color/primary_color1"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:layout_marginTop="@dimen/_15sdp"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:id="@+id/image_chart_free"
+                    android:layout_width="@dimen/_12sdp"
+                    android:layout_gravity="center"
+                    android:layout_height="@dimen/_12sdp"
+                    android:src="@drawable/ic_chart_free"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/other"
+                    android:layout_marginStart="@dimen/_8sdp"
+                    android:layout_gravity="center"
+                    android:textSize="@dimen/_12ssp"
+                    android:fontFamily="@font/poppins_medium"
+                    android:textColor="@color/primary_color"/>
+
+                <TextView
+                    android:id="@+id/txtFreeStorage"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/other_storage"
+                    android:layout_marginStart="@dimen/_8sdp"
+                    android:layout_gravity="center"
+                    android:textSize="@dimen/_12ssp"
+                    android:fontFamily="@font/poppins_medium"
+                    android:textColor="@color/primary_color1"/>
+
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+</RelativeLayout>

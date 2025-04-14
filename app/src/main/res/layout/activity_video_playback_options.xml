@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_margin="@dimen/margin_horizontal"
+    tools:context=".ui.activity.VideoPlaybackOptionsActivity">
+
+    <LinearLayout
+        android:id="@+id/ll_main"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:id="@+id/btnBack"
+            android:layout_width="@dimen/_20sdp"
+            android:layout_height="@dimen/_20sdp"
+            android:layout_gravity="center"
+            android:src="@drawable/ic_back" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/_15sdp"
+            android:fontFamily="@font/poppins_semibold"
+            android:text="@string/video_playback"
+            android:textColor="@color/primary_color"
+            android:textSize="@dimen/_16ssp" />
+    </LinearLayout>
+
+
+        <TextView
+            android:id="@+id/txtPlayAudiBG"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/ll_main"
+            android:layout_marginTop="@dimen/_20sdp"
+            android:fontFamily="@font/poppins"
+            android:text="Play audio in background"
+            android:textColor="@color/black"
+            android:textSize="@dimen/_12ssp" />
+
+        <Switch
+            android:id="@+id/audiBGwitch"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@id/txtPlayAudiBG"
+            android:layout_alignParentEnd="true"
+            android:checked="true" />
+
+    <TextView
+            android:id="@+id/txtAudiPlayNextLecture"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/txtPlayAudiBG"
+            android:layout_marginTop="@dimen/_20sdp"
+            android:fontFamily="@font/poppins"
+            android:text="Auto-play next lecture"
+            android:textColor="@color/black"
+            android:textSize="@dimen/_12ssp" />
+
+        <Switch
+            android:id="@+id/audiPlayNextLectureSwitch"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@id/txtAudiPlayNextLecture"
+            android:layout_alignParentEnd="true"
+            android:checked="true" />
+</RelativeLayout>

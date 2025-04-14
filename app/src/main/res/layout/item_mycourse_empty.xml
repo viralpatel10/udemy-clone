@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_margin="@dimen/margin_horizontal"
+    android:layout_height="wrap_content">
+
+    <RelativeLayout
+        android:id="@+id/btnCourse"
+        android:layout_width="match_parent"
+        android:background="@drawable/search_bg"
+        android:gravity="center"
+        android:layout_height="@dimen/_40sdp">
+
+        <TextView
+            android:id="@+id/txtCourseTitleName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/_12sdp"
+            android:text="@string/txtCourseField"
+            android:textColor="@color/primary_color1"
+            android:textSize="@dimen/_11ssp"
+            android:fontFamily="@font/poppins_medium"/>
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_next"
+            android:layout_marginEnd="@dimen/_12sdp"
+            android:layout_alignParentEnd="true"/>
+    </RelativeLayout>
+
+</RelativeLayout>

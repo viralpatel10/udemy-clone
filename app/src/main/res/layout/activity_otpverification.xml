@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_margin="@dimen/margin_horizontal"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.activity.OTPVerificationActivity">
+
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@+id/btnBack"
+        android:layout_width="@dimen/_20sdp"
+        android:layout_height="@dimen/_20sdp">
+
+        <ImageView
+            android:layout_width="@dimen/_20sdp"
+            android:layout_height="@dimen/_20sdp"
+            android:src="@drawable/ic_back"/>
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/_20sdp"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/poppins_semibold"
+            android:text="@string/otp_verification"
+            android:textColor="@color/primary_color"
+            android:textSize="@dimen/_18ssp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/poppins"
+            android:gravity="center"
+            android:text="Enter the verification code we just sent on \nyour email address."
+            android:textColor="@color/primary_color1"
+            android:textSize="@dimen/_12ssp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/_35sdp"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_gravity="center">
+
+            <EditText
+                android:id="@+id/otp1"
+                style="@style/OtpEditText" />
+
+            <EditText
+                android:id="@+id/otp2"
+                style="@style/OtpEditText" />
+
+            <EditText
+                android:id="@+id/otp3"
+                style="@style/OtpEditText" />
+
+            <EditText
+                android:id="@+id/otp4"
+                style="@style/OtpEditText" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:layout_marginTop="@dimen/_15sdp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/dont_recevied_code"
+                android:textSize="@dimen/_14ssp"
+                android:fontFamily="@font/poppins"
+                android:textColor="@color/black"/>
+
+            <TextView
+                android:id="@+id/txtResend"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/_5sdp"
+                android:text="@string/resend"
+                android:fontFamily="@font/poppins"
+                android:textSize="@dimen/_14ssp"
+                android:textColor="@color/primary_color"/>
+        </LinearLayout>
+
+
+        <TextView
+            android:id="@+id/btnVerify"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_40sdp"
+            android:layout_marginTop="@dimen/_40sdp"
+            android:background="@drawable/bg_button"
+            android:fontFamily="@font/poppins_medium"
+            android:gravity="center"
+            android:text="@string/verify"
+            android:textColor="@color/white"
+            android:textSize="@dimen/_14ssp" />
+
+
+    </LinearLayout>
+</LinearLayout>
+</RelativeLayout>
